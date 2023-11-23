@@ -1,0 +1,44 @@
+1. structure -- 
+
+#include <stdio.h>
+
+struct area
+{
+    int height;
+    int width;
+}; 
+
+struct area r={10, 5};
+
+
+int main()
+{
+    printf("Hello World\n");
+    printf("%d\n", r.height);
+    printf("%d", r.width);
+
+    return 0;
+}
+
+2. pointer 
+
+*******************************************************************************/
+#include <stdio.h>
+#include<stdlib.h>
+
+
+
+int main()
+{
+    printf("Hello World\n");
+    
+    int a=10;
+    int *p;
+    p=&a;
+    printf("address of a is %d\n", p);
+    printf("the address of  a is %d\n ", &a);
+    printf("the value of  a is %d\n", *p);
+    printf("the value of  a is %d\n", *(&a));
+
+    return 0;
+}

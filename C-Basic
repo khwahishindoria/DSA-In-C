@@ -20,6 +20,38 @@ int main()
     return 0;
 }
 
+
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+struct salary{
+    int p;
+    int r;
+    
+} s;
+
+struct salary s1={5,10} ;
+
+int main()
+{
+    printf("Hello World");
+    printf ("\nThe size of s structure is %lu", sizeof(s));
+    printf ("\nThe size of s1 structure is %lu", sizeof(s));
+    s.p=10;
+    s.r=20;
+    printf ("\nThe variable of s structure is %lu", s.p);
+    printf ("\nThe variable of s1 structure is %lu", s1.p);
+
+    return 0;
+}
+
 2. pointer 
 
 *******************************************************************************/
@@ -41,4 +73,28 @@ int main()
     printf("the value of  a is %d\n", *(&a));
 
     return 0;
+}
+
+
+##########################################################################################################################################################
+Function 
+
+#include<stdio.h>
+int main(){
+    
+    int x,y,z;
+    printf("\nEnter the value of x");
+    scanf("%d", &x);
+    printf("\nEnter the value of y");
+    scanf("%d", &y);   
+    printf("\n x and y are %d %d", x, y);
+    y=split(x,y);
+    printf("\n the addition of x and y is %d", y);
+}
+
+
+int split(int a, int b){
+    int c;
+    c=a+b;
+    return(c);
 }

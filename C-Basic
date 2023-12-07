@@ -98,3 +98,28 @@ int split(int a, int b){
     c=a+b;
     return(c);
 }
+
+
+
+##########################################################################################################################################################
+ Linked List
+#include <stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+    struct node{
+        int data;
+        struct node *next;
+    } *p;
+    
+    p=(struct node *)malloc(sizeof(struct node));
+    p->data=10;
+    p->next=0;
+    printf("\nThe data value is %d", p->data);
+    printf("\nThe size of struct is %d", sizeof(*p));
+    
+    printf("\nThe points value is %d", p->next);
+    return 0;
+    
+}

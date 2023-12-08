@@ -64,7 +64,7 @@ search_val(){
     }
     return 0;
     
-    if(flag == 0) {
+    if(flag == 1) {
         printf("Search Found\n");
     }
     else{

@@ -51,7 +51,25 @@ delete_val(){
 }
 
 search_val(){
-    printf(" search val");
+    int value, flag=0;
+    printf("Searching element \n");
+    scanf("%d", &value);
+    int key = value % size;
+    struct node *temp = chain[key];
+    while(temp)
+    {
+        if(temp->data == value)
+            flag=1;
+        temp = temp->next;
+    }
+    return 0;
+    
+    if(flag == 0) {
+        printf("Search Found\n");
+    }
+    else{
+        printf("Search Not Found\n");
+    }
 }
 void display()
 {

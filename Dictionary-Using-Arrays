@@ -1,36 +1,44 @@
-/******************************************************************************
 
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 #include<conio.h>
 #include<string.h>
 
 #define MAX_SIZE 100
 
-int key[MAX_SIZE];
+int keys[MAX_SIZE];
 char values[MAX_SIZE][100];
 int size = 0;
 
 void insert_val(){
-    int k;
-    char v[MAX_SIZE];
+    int key;
+    char value[MAX_SIZE];
     printf("\nPlease enter the key you want to store");
-    scanf("%d", &k);
+    scanf("%d", &key);
     printf("\nPlease enter the value to store");
-    scanf("%c", &v);
-    strcpy(key[size], k);
-    printf("key is: %d", key[size]);
-    
-    
+    scanf("%s", value);
+    keys[size] == key;
+    strcpy(values[size], value);
+    strcpy(keys[size], key);
+    printf("key is: %d", keys[size]);
+    printf("value is: %s", values[size]);
+    size++;
     }
     
 void search_val(){
-    
+    int i;
+    char search[MAX_SIZE];
+    printf("Enter the value to be searched");
+    scanf("%s", search);
+    for (i=0; i<MAX_SIZE; i++)
+    {
+        {
+            if (strcmp(search, values[i]) == 0)
+            return i; 
+        }
+    }
+    return -1;
+    printf("string not found");
+        
 }
 
 void delete_val(){

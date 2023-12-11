@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include<stdlib.h>
+#include <malloc.h>
 struct node{
     int data;
     int next;
@@ -28,7 +29,7 @@ void createLL(int A[], int n){
 void display(struct node *p){
     while(p != NULL){
         printf("%d", p->data);
-        p=p->next;
+        p = p->next;
     }
 }
 
